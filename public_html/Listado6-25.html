@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html lang="es">
+    <head>
+        <title>Formularios</title>
+        <script type="text/javascript" src="JS/Validar6-25.js">
+        </script>
+    </head>
+    <body>
+        <section>
+            <form name="informacion" method="get">
+                Usuario:
+                <input pattern="[A-Za-z]{3,}" name="usuario" id="usuario"
+                       maxlength="10" required>
+                Email:
+                <input type="email" name="miemail" id="miemail" required>
+                Rango de Edad:
+                <input type="range" name="miedad" id="miedad" min="0"
+                       max="80" step="20" value="20">
+                <output id="rango">0 a 20</output>
+                <input type="button" id="enviar" value="ingresar">
+            </form>
+        </section>
+    </body>

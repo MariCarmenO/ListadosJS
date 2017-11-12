@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Insertar Texto</title>
+        <script type="text/javascript">
+            function ponTexto() {
+                var mensaje = prompt("Dáme un texto y lo haré un párrafo");
+                var etiq = document.getElementById("texto");
+                etiq.innerHTML += "<p>" + mensaje + "</p>";
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="Pon texto" onclick="ponTexto()"/>
+        <div id="texto"></div>
+    </body>
+</html>
